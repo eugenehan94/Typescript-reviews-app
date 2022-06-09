@@ -4,13 +4,57 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <title>Snowpack App</title>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
+    <main>
+      <section class="container">
+        <div class="title">
+          <h2>Reviews</h2>
+          <div class="underline"></div>
+        </div>
+        <article class="review">
+          <div class="img-container">
+            <img src="person-1.jpeg" id="person-img" alt="" />
+          </div>
+          <h4 id="author">sara jones</h4>
+          <p id="job">ux designer</p>
+          <p id="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+            Iste, doloremque nihil?
+          </p>
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="button-container">
+            <button class="prev-btn-two">
+              <i class="fas fa-chevron-left"></i>
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn-two">
+              <i class="fas fa-chevron-right"></i>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <button class="random-btn">Surprise me</button>
+        </article>
+      </section>
+    </main>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/dist/index.js"></script>
     <!--
