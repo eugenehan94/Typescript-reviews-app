@@ -46,6 +46,7 @@ const prevBtn = document.querySelector<HTMLButtonElement>(".prev-btn");
 const nextBtn = document.querySelector<HTMLButtonElement>(".next-btn");
 const randomBtn = document.querySelector<HTMLButtonElement>(".random-btn");
 const prevBtnTwo = document.querySelector<HTMLButtonElement>(".prev-btn-two")
+const nextBtnTwo = document.querySelector<HTMLButtonElement>(".next-btn-two")
 let currentItem = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -85,4 +86,19 @@ randomBtn?.addEventListener("click", () => {
   showPerson(currentItem)
 })
 
+prevBtnTwo?.addEventListener("click", () => {
+  currentItem -=2
+  if(currentItem < 0){
+    currentItem = reviews.length-1
+  }
+  showPerson(currentItem)
+})
+
+nextBtnTwo?.addEventListener("click", () => {
+  currentItem +=2
+  if(currentItem > reviews.length -1){
+    currentItem = 1
+  }
+  showPerson(currentItem)
+})
 export {}
